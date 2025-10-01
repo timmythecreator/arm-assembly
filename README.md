@@ -7,6 +7,9 @@ It contains small code snippets, notes, and experiments that mark milestones of 
 
 ## 📂 Project Contents
 - `infinite_loop.s` - a simple infinite loop example in ARM assembly.
+- `ld_manual.s` - an example of load operator usage
+- `st.s` - an example of store operator usage
+- `multiple_mo.s` - an example of multiple load/store operator usage
 
 ---
 
@@ -32,15 +35,18 @@ sudo apt install build-essential
 ## ▶️ How to Build & Run
 ### On Intel (cross-compilation + QEMU)
 ```bash
-arm-linux-gnueabihf-gcc -o infinite_loop infinite_loop.s -nostdlib -static
-qemu-arm ./infinite_loop
+arm-linux-gnueabihf-gcc -o output_file input_file.s -nostdlib -static
+# OR
+./build.sh output_file input_file.s
+qemu-arm ./output_file
 ```
 
 ### On ARM (native execution)
 ```bash
-as -o infinite_loop.o infinite_loop.s
-ld -o infinite_loop infinite_loop.o
-./infinite_loop
+gcc -o output_file input_file.s -nostdlib -static
+# OR
+./build.sh output_file input_file.s
+./output_file
 ```
 
 ---
@@ -51,13 +57,13 @@ ld -o infinite_loop infinite_loop.o
 
 1) Start QEMU with gdbserver:
 ```bash
-qemu-arm -g 4242 ./infinite_loop
+qemu-arm -g 4242 ./output_file
 ```
 
 2) In another terminal, connect with GDB:
 ```bash
 gdb-multiarch
-(gdb) file ./infinite_loop
+(gdb) file ./output_file
 (gdb) target remote localhost:4242
 ```
 
