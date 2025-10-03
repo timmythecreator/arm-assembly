@@ -10,6 +10,8 @@ It contains small code snippets, notes, and experiments that mark milestones of 
 - `ld_manual.s` - an example of load operator usage
 - `st.s` - an example of store operator usage
 - `multiple_mo.s` - an example of multiple load/store operator usage
+- `shift_o.s` - an example of shift operators usage
+- `bitwise_o.s` - an example of bitwise operators usage (XOR in this case)
 
 ---
 
