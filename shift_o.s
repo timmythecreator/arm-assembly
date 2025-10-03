@@ -1,5 +1,5 @@
-.global _start
 .section .text
+.global _start
 
 _start:
     ldr r1, =#0xF0F0F0F0  // Load a test value into R1

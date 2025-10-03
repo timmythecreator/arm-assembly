@@ -1,5 +1,5 @@
-.global _start
 .section .text
+.global _start
 
 _start:
  ldr r0, =#0x12 // 00010010
