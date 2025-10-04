@@ -12,6 +12,7 @@ It contains small code snippets, notes, and experiments that mark milestones of 
 - `multiple_mo.s` - an example of multiple load/store operator usage
 - `shift_o.s` - an example of shift operators usage
 - `bitwise_o.s` - an example of bitwise operators usage (XOR in this case)
+- `math_s.s` - an example of math operators usage (It's required to build for cortex-a15 or newer as older ARM don't support udiv/sdiv instructions
 
 ---
 
@@ -37,7 +38,7 @@ sudo apt install build-essential
 ## ▶️ How to Build & Run
 ### On Intel (cross-compilation + QEMU)
 ```bash
-arm-linux-gnueabihf-gcc -o output_file input_file.s -nostdlib -static
+arm-linux-gnueabihf-gcc -o output_file input_file.s -nostdlib -static -mcpu=cortex-a15
 # OR
 ./build.sh output_file input_file.s
 qemu-arm ./output_file
