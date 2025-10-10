@@ -14,6 +14,8 @@ It contains small code snippets, notes, and experiments that mark milestones of 
 - `bitwise_o.s` - an example of bitwise operators usage (XOR in this case)
 - `math_s.s` - an example of math operators usage (It's required to build for cortex-a15 or newer as older ARM don't support udiv/sdiv instructions
 - `branching_o.s` - an example of branching operators usage
+- `loop\if-else_o.s` - equivalent of an if-else statement
+- `loop\for-loop_o.s` - equivalent of for loop
 
 ---
 
