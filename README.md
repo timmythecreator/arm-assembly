@@ -16,6 +16,7 @@ It contains small code snippets, notes, and experiments that mark milestones of 
 - `branching_o.s` - an example of branching operators usage
 - `loop\if-else_o.s` - equivalent of an if-else statement
 - `loop\for-loop_o.s` - equivalent of for loop
+- `func\` - an example of func usage
 
 ---
 
