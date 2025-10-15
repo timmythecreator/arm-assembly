@@ -5,7 +5,7 @@ It contains small code snippets, notes, and experiments that mark milestones of 
 
 ---
 
-## 📂 Project Contents
+## Project Contents
 - `infinite_loop.s` - a simple infinite loop example in ARM assembly.
 - `ld_manual.s` - an example of load operator usage
 - `st.s` - an example of store operator usage
@@ -16,11 +16,11 @@ It contains small code snippets, notes, and experiments that mark milestones of 
 - `branching_o.s` - an example of branching operators usage
 - `loop\if-else_o.s` - equivalent of an if-else statement
 - `loop\for-loop_o.s` - equivalent of for loop
-- `func\` - an example of func usage
-
+- `func\` - an example of func usage (For external call use `make`)
+- `stack\` - an example of stack usage
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 ### On Intel (x86/x86_64 host)
 Install cross-compilation tools and QEMU user emulation:
@@ -39,7 +39,7 @@ sudo apt install build-essential
 
 ---
 
-## ▶️ How to Build & Run
+## How to Build & Run
 ### On Intel (cross-compilation + QEMU)
 ```bash
 arm-linux-gnueabihf-gcc -o output_file input_file.s -nostdlib -static -mcpu=cortex-a15
@@ -58,7 +58,7 @@ gcc -o output_file input_file.s -nostdlib -static
 
 ---
 
-## 🐞 Debugging Workflow (Intel host)
+## Debugging Workflow (Intel host)
 
 ### You can debug ARM binaries with QEMU and GDB:
 
@@ -77,9 +77,9 @@ gdb-multiarch
 **Useful GDB commands:**
 * `lay next` → view code with source/assembly (TUI mode)
 * `ni` → next instruction
-* `si` → step into instruction
+* `stepi` → step into instruction
 
-## 📝 Notes
+## Notes
 
 _This repository is for educational purposes only._
 _Examples are intentionally minimalistic to illustrate basic ARM assembly concepts._
