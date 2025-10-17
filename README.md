@@ -18,6 +18,7 @@ It contains small code snippets, notes, and experiments that mark milestones of 
 - `loop\for-loop_o.s` - equivalent of for loop
 - `func\` - an example of func usage (For external call use `make`)
 - `stack\` - an example of stack usage
+- `syscalls\` - an exampel of syscall usage
 ---
 
 ## Requirements
