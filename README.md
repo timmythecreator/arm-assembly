@@ -18,9 +18,16 @@ It contains small code snippets, notes, and experiments that mark milestones of 
 - `loop/for-loop_o.s` - equivalent of for loop
 - `func/` - an example of func usage (For external call use `make`)
 - `stack/` - an example of stack usage
-- `syscalls/` - an exampel of syscall usage
-- `shell/` - final project: a terminal shell (How to use: 'ls' → '/bin/ls')
+- `syscalls/` - an example of syscall usage
+- `shell/` - **Final mini-project** — a minimal terminal shell capable of running system commands (e.g. `ls` → `/bin/ls`).
 ---
+
+## Certificate
+
+This repository includes my **ARM Assembly Course Completion Certificate** — proof of completing a structured learning program.  
+You can view it here:
+
+[Androsov T, ASM Certificate.pdf](./Androsov%20T,%20ASM%20Certificate.pdf)
 
 ## Requirements
 
@@ -31,7 +38,7 @@ sudo apt update
 sudo apt install build-essential gcc-arm-linux-gnueabihf qemu-user gdb-multiarch
 ```
 
-### On ARM (native host, e.g. Raspberry Pi)
+### On ARM (native host, e.g., Raspberry Pi)
 
 Only the standard build tools are required:
 ```bash
