@@ -1,0 +1,5 @@
+TO-DO:
+- Improve shell.s (e.g.: Instead of calling /bin/ls, use 'ls' directly)
+- Separate each ASM file into directories and create documentation for them
+- Add more complete projects
+- Fix README.md
